@@ -3,7 +3,7 @@ html {
     font-family: "Centaur", Times, "Times New Roman", serif
 }
 
-/* Learn the Bow Logo */
+/* Learn the Camera Logo */
 /* #logo {
     max-height: 175px;
     display: block;
@@ -13,17 +13,18 @@ html {
 
 } */
 
-#shootingBow {
-    animation: shootbow 1s 5;
+#shootingCamera {
+    animation: shootcamera 1s 5;
     width: 240px;
     height: 175px;
     background-image: url(../images/logo8.jpg);
     position: relative;
     animation-timing-function: steps(5, end);
     margin: auto;
+    -webkit-animation: shootcamera 1s 5;
 }
 
-@keyframes shootbow {
+@keyframes shootcamera {
     0% {
         background-position: 0 0;
     }
@@ -62,7 +63,7 @@ html {
     text-align: center;
 }
 
-/* Find Your Bow Button */
+/* Find Your Camera Button */
 button {
     cursor: pointer;
     text-align: center;
@@ -128,7 +129,7 @@ h2 {
     margin-top: 15px;
 }
 
-h2.favoriteBows {
+h2.favoriteCameras {
     background-color: white;
     color: #0d1a32;
     border: 1px solid #bfbfbf;
@@ -176,7 +177,7 @@ select.dropdownmenus {
 }
 
 
-/* Bow pictures */
+/* Camera pictures */
 .image {
     max-width: auto;
     max-height: 200px;
@@ -236,22 +237,22 @@ a:hover {
     background-color: white;
 }
 
-/* Bow Container */
-.bowbox1 {
+/* Camera Container */
+.camerabox1 {
     transition: 1s;
     border: 1px solid #0d1a32;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.bowbox2 {
+.camerabox2 {
     transition: 1s;
     border: 1px solid #0d1a32;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
-.bowbox3 {
+.camerabox3 {
     transition: 1s;
     border: 1px solid #bfbfbf;
     border-radius: 5px;
@@ -311,13 +312,13 @@ a:hover {
         max-height: 400px;
     }
 
-    #shootingBow {
+    #shootingCamera {
         width: 300px;
         height: 250px;
         background-image: url(../images/logo7.jpg);
     }
     
-    @keyframes shootbow {
+    @keyframes shootcamera {
         0% {
             background-position: 0 0;
         }
@@ -346,41 +347,41 @@ a:hover {
         justify-content: center;
     }
 
-    h2.favoriteBows {
+    h2.favoriteCameras {
         max-width: 800px;
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .bowbox1 {
+    .camerabox1 {
         height: 720px;
         width: 400px;
         margin: 20px;
     }
 
-    .bowbox1:hover {
+    .camerabox1:hover {
         position: relative;
         top: -10px;
     }
 
-    .bowbox2 {
+    .camerabox2 {
         width: 400px;
         margin: 20px;
     }
 
-    .bowbox2:hover {
+    .camerabox2:hover {
         position: relative;
         top: -10px;
     }
 
-    .bowbox3 {
+    .camerabox3 {
         width: 400px;
         margin: 20px;
         /* float: left; */
     }
 
-    .bowbox3:hover {
+    .camerabox3:hover {
         position: relative;
         top: -10px;
     }
