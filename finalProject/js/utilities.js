@@ -88,7 +88,7 @@ export default class cameraUtilities {
     }
 
     renderOneCamera(cameraname) {
-        let specificCamera = cameras.filter(camera => camera.name == camera);
+        let specificCamera = cameras.filter(camera => camera.name == cameraname);
         // console.log(specificCamera[0]);
         let item = "";
         item += `
