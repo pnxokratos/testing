@@ -1,0 +1,387 @@
+html {
+    background-color: white;
+    font-family: "Centaur", Times, "Times New Roman", serif
+}
+
+/* Learn the Bow Logo */
+/* #logo {
+    max-height: 175px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+} */
+
+#shootingBow {
+    animation: shootbow 1s 5;
+    width: 240px;
+    height: 175px;
+    background-image: url(../images/logo8.jpg);
+    position: relative;
+    animation-timing-function: steps(5, end);
+    margin: auto;
+}
+
+@keyframes shootbow {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: -1200px 0;
+    }
+}
+
+.layout {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+/* form for user input */
+#dropdownmenus {
+    display: flex;
+    /* align-items: center; */
+    flex-flow: column wrap;
+    justify-content: center;
+    max-width: 100%;
+    align-content: center;
+    font-size: larger;
+}
+
+/* each dropdown menu */
+.dropdownmenus {
+    margin-bottom: 30px;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+}
+
+/* Find Your Bow Button */
+button {
+    cursor: pointer;
+    text-align: center;
+    background-color: #727272;
+    color: white;
+    font-size: larger;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+button:hover {
+    color: #727272;
+    background-color: white;
+}
+
+button.save {
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background-color: #727272;
+    font-size: medium;
+    width: 90%;
+    margin: 10px;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+button.save:hover {
+    color: #727272;
+    background-color: white;
+    transition: .3s;
+}
+
+button.remove {
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    color: #727272;
+    font-size: small;
+    width: 90%;
+    padding: 10px;
+    margin: 15px;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+button.remove:hover {
+    color: white;
+    background-color: #727272;
+    transition: .3s;
+}
+
+h2 {
+    font-size: 20px;
+    color: #0d1a32;
+    margin-bottom: 2px;
+    margin-top: 15px;
+}
+
+h2.favoriteBows {
+    background-color: white;
+    color: #0d1a32;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    font-size: large;
+    text-align: center;
+    padding: 15px;
+    margin: 45px 0px 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    max-width: 95%;
+    color: #0d1a32;
+}
+
+h4 {
+    cursor: pointer;
+    color: #0d1a32;
+}
+
+h3 {
+    color: #0d1a32;
+}
+
+select.dropdownmenus {
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0d1a32;
+    color: white;
+    border: 1px solid #0d1a32;
+    border-radius: 5px;
+}
+
+#results {
+    text-align: center;
+}
+
+#favorites {
+    text-align: center;
+}
+
+
+/* Bow pictures */
+.image {
+    max-width: auto;
+    max-height: 200px;
+    animation: fadeIn ease 4s;
+    /* width: auto;
+    height: 300px; */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+h5 {
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: large;
+    color: #0d1a32;
+}
+
+/* p {
+    margin-top: -5px;
+} */
+
+#error p {
+    color: rgb(171, 22, 22);
+    font-size: x-large;
+    text-align: center;
+}
+
+a:link {
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    background-color: #727272;
+    font-size: medium;
+    padding: 7px;
+    margin: 20px;
+    border: 1px solid #727272;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+a:visited {
+    color: white;
+    background-color: #0d1a32;
+}
+
+a:hover {
+    cursor: pointer;
+    color: #727272;
+    background-color: white;
+}
+
+/* Bow Container */
+.bowbox1 {
+    transition: 1s;
+    border: 1px solid #0d1a32;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.bowbox2 {
+    transition: 1s;
+    border: 1px solid #0d1a32;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.bowbox3 {
+    transition: 1s;
+    border: 1px solid #bfbfbf;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* .favorites {
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* Give it some cool transitions on the link hover */
+
+/* for Larger screen */
+@media screen and (min-width: 768px) {
+
+    /* Would I change anything for a large screen? */
+    p {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+    }
+
+    p.directions {
+        text-align: center;
+    }
+
+    .layout {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 15%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    #dropdownmenus {
+        display: flex;
+        align-items: center;
+        flex-flow: row;
+        justify-content: center;
+        max-width: 100%;
+        align-content: center;
+        font-size: larger;
+    }
+
+    /* each dropdown menu */
+    .dropdownmenus {
+        margin: 15px;
+        padding: 15px;
+        width: 300px;
+    }
+
+    .image {
+        max-width: auto;
+        max-height: 400px;
+    }
+
+    #shootingBow {
+        width: 300px;
+        height: 250px;
+        background-image: url(../images/logo7.jpg);
+    }
+    
+    @keyframes shootbow {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: -1500px 0;
+        }
+    }
+
+    button {
+        width: 30%;
+        display: block;
+        margin: 35px auto 15px;
+    }
+
+    #results {
+        /* text-align: center; */
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    #favorites {
+        /* text-align: center; */
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    h2.favoriteBows {
+        max-width: 800px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .bowbox1 {
+        height: 720px;
+        width: 400px;
+        margin: 20px;
+    }
+
+    .bowbox1:hover {
+        position: relative;
+        top: -10px;
+    }
+
+    .bowbox2 {
+        width: 400px;
+        margin: 20px;
+    }
+
+    .bowbox2:hover {
+        position: relative;
+        top: -10px;
+    }
+
+    .bowbox3 {
+        width: 400px;
+        margin: 20px;
+        /* float: left; */
+    }
+
+    .bowbox3:hover {
+        position: relative;
+        top: -10px;
+    }
+}
