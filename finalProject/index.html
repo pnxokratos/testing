@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Learn the Bow - Bow Finder</title>
+    <title>Learn the Camera - Camera Finder</title>
     <link rel="stylesheet" href="css/styles.css" />
     <!-- blank favicon for now -->
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
@@ -14,10 +14,10 @@
 </head>
 
 <body>
-    <div id="shootingBow">
+    <div id="shootingCamera">
         <!-- <img src="images/lblogo.jpg" id="logo"> -->
     </div>
-    <p class="directions">It can be overwhelming to find a bow that's right for you. This simple app is designed to narrow the list of options that would best suit your need. Choose the best options for you, then click "Find Your Bow" to get a list of options customized for you.</p>
+    <p class="directions">It can be overwhelming to find a camera that's right for you. This simple app is designed to narrow the list of options that would best suit your need. Choose the best options for you, then click "Find Your Camera" to get a list of options customized for you.</p>
     <div id="dropdownmenus">
         <div class="layout">
             <h2>Select Your Level</h2>
@@ -28,10 +28,10 @@
             </select>
         </div>
         <div class="layout">
-            <h2>Select the Type of Bow</h2>
+            <h2>Select the Type of Camera</h2>
             <select id="type" class="dropdownmenus">
-                <option value="compound">Compound Bows</option>
-                <option value="recurve">Recurve Bows</option>
+                <option value="compound">Compound Cameras</option>
+                <option value="recurve">Recurve Cameras</option>
             </select>
         </div>
         <div class="layout">
@@ -42,14 +42,14 @@
             </select>
         </div>
     </div>
-    <button onclick="window.myBows.filterResults()" id="findbowbutton">Find Your Bow</button>
+    <button onclick="window.myCameras.filterResults()" id="findcamerabutton">Find Your Camera</button>
     <div id="results">
 
     </div>
     <div id="error" class="hidden">
-        <p>*This bow is already in your favorites list.*</p>
+        <p>*This camera is already in your favorites list.*</p>
     </div>
-    <h2 class="favoriteBows">My Favorite Bows</h2>
+    <h2 class="favoriteCameras">My Favorite Cameras</h2>
     <div id="favorites">
         
     </div>

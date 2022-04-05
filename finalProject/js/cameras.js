@@ -1,4 +1,4 @@
-export const bows = [{
+export const cameras = [{
         name: 'Xpedite NXT',
         imgSrc: './images/EOSR5.png',
         imgAlt: 'Expedite Next PSE Compound Bow',

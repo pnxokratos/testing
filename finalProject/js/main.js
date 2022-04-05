@@ -1,5 +1,5 @@
-import bowUtilities from './utilities.js';
-window.myBows = new bowUtilities();
+import cameraUtilities from './utilities.js';
+window.myCameras = new cameraUtilities();
 window.addEventListener("load", () => {
-    myBows.showingSavedBows();    
+    myCameras.showingSavedCameras();    
 });
